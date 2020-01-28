@@ -119,27 +119,27 @@ function wrongFunction2(){
 function correctFunction3(){
   document.getElementById("userAnswer3").innerText="Correct";
   document.getElementById("concord").disabled=true;
-  document.getElementById("carson City").disabled =true;
+  document.getElementById("carsonCity").disabled =true;
   document.getElementById("boise").disabled =true;
   document.getElementById("lincoln").disabled =true;
   score++;
   document.getElementById("score").innerHTML=score;
+  
 }
 function wrongFunction3(){
   document.getElementById("userAnswer3").innerText="Wrong";
   document.getElementById("concord").disabled=true;
-  document.getElementById("carson City").disabled =true;
+  document.getElementById("carsonCity").disabled =true;
   document.getElementById("boise").disabled =true;
   document.getElementById("lincoln").disabled =true;
 }
 //q4
 function correctFunction4(){
   document.getElementById("userAnswer4").innerText="Correct";
-  score++;
   document.getElementById("montgomery").disabled=true;
   document.getElementById("phoenix").disabled =true;
   document.getElementById("juneau").disabled =true;
-  document.getElementById("Little Rock").disabled =true;
+  document.getElementById("littleRock").disabled =true;
   score++;
   document.getElementById("score").innerHTML=score;
 }
@@ -148,18 +148,17 @@ function wrongFunction4(){
   document.getElementById("montgomery").disabled=true;
   document.getElementById("phoenix").disabled =true;
   document.getElementById("juneau").disabled =true;
-  document.getElementById("Little Rock").disabled =true;
+  document.getElementById("littleRock").disabled =true;
 }
 //5
 function correctFunction5(){
   document.getElementById("userAnswer5").innerText="Correct";
-  score++;
-  
   document.getElementById("madison").disabled=true;
   document.getElementById("atlanta").disabled =true;
   document.getElementById("olympia").disabled =true;
   document.getElementById("richmond").disabled =true;
   score++;
+  document.getElementById("score").innerHTML=score;
 }
 function wrongFunction5(){
   document.getElementById("userAnswer5").innerText="Wrong";
