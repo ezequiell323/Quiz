@@ -1,0 +1,176 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body onload=pageLoad()>
+    <p id="timeUpdate"></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+               <h1>The U.S.: State Capitals Quiz</h1> 
+            </div>
+        </div>
+             <div class= "row">
+                 <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                   <p>1 out 5</p>
+                </div>
+                    <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                <p id="userAnswer"></p>
+                    </div>  
+            </div>    
+            <div class= "row">
+                <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                 <h2 id="qOne"></h2> 
+                 <button type="button" class="btn btn-primary btn-lg btn-block"  id="montpelier"   onclick="wrongFunction()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block"  id="pierre"  onclick="wrongFunction()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block"  id="albany"  onclick="wrongFunction()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block"  id="tallahassee" onclick="correctFunction()"></button>
+                </div>
+                   <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                    <img  class=capital src="https://content.r9cdn.net/rimg/dimg/b8/82/5b44c64e-city-15927-1685855d8db.jpg?crop=true&width=1000&height=600&xhint=0&yhint=0" >
+                   </div>  
+           </div>   
+      </div>
+    
+    
+      <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+               <h1>The U.S.: State Capitals Quiz</h1> 
+            </div>
+        </div>
+             <div class= "row">
+                 <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                   <p>2 out 5</p>
+                </div>
+                    <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <p id="userAnswer2"></p>    
+                    </div>  
+            </div>    
+            <div class= "row">
+                <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                 <h2 id="qTwo"></h2> 
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="jackson" onclick="correctFunction2()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="dover" onclick="wrongFunction2()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="miami" onclick="wrongFunction2()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="frankfort" onclick="wrongFunction2()"></button>
+                </div>
+                   <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <img  class=capital src="https://livability.com/sites/default/files/AlbanyNY-DowntownDistrict.jpg" >
+                    </div>  
+           </div>   
+      </div>
+    
+    
+      <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+               <h1>The U.S.: State Capitals Quiz</h1> 
+            </div>
+        </div>
+             <div class= "row">
+                 <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                   <p>3 out 5</p>
+                </div>
+                    <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <p id="userAnswer3"></p>  
+                    </div>  
+            </div>    
+            <div class= "row">
+                <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                 <h2 id="qThree"></h2> 
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="concord" onclick="wrongFunction3()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="carsonCity" onclick="wrongFunction3()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="boise" onclick="correctFunction3()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="lincoln" onclick="wrongFunction3()"></button>
+                </div>
+                   <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <img  class=capital src="https://nplusonemag.com/wp-content/uploads/2014/03/Boise.jpeg" >
+                    </div>  
+           </div>   
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+               <h1>The U.S.: State Capitals Quiz</h1> 
+            </div>
+        </div>
+             <div class= "row">
+                 <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                   <p>4 out 5</p>
+                </div>
+                    <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <p id="userAnswer4"></p>   
+                    </div>  
+            </div>    
+            <div class= "row">
+                <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                 <h2 id="qFour"></h2> 
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="montgomery" onclick="wrongFunction4()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="phoenix" onclick="wrongFunction4()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="juneau" onclick="correctFunction4()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="litteRock" onclick="wrongFunction4()"></button>
+                </div>
+                   <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <img  class=capital src="https://forgetsomeday.com/wp-content/uploads/JuneauWhales-8.jpg" >
+                    </div>  
+           </div>   
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+               <h1>The U.S.: State Capitals Quiz</h1> 
+            </div>
+        </div>
+             <div class= "row">
+                 <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                   <p>5 out 5</p>
+                </div>
+                    <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <p id="userAnswer5"></p>  
+                    </div>  
+            </div>    
+            <div class= "row">
+                <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-6">
+                 <h2 id="qFive"></h2> 
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="madison" onclick="wrongFunction5()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="atlanta" onclick="correctFunction5()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="olympia" onclick="wrongFunction5()"></button>
+                 <button type="button" class="btn btn-primary btn-lg btn-block" id="richmond" onclick="wrongFunction5()"></button>
+                </div>
+                   <div class= "col-xl-6 col-lg-6 col-md-6 col-6">
+                      <img  class=capital src="https://bitcoinist.com/wp-content/uploads/2018/09/shutterstock_1031967217-e1536385789945.jpg" >
+                    </div>  
+           </div>   
+      </div>
+    
+    
+      <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+               <h1>High Score</h1> 
+               <h2 id="score">0</h2>
+            </div>
+           
+    
+    
+    <script src="questions.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>
